@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Whisk Café</title>
+
+<style>
+:root {
+  --brown: #5C4033;
+  --dark-brown: #4b3529;
+  --beige: #E9DDCF;
+  --cream: #fff7ee;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--beige);
+  color: var(--dark-brown);
+}
+
+/* HEADER */
+header {
+  background: var(--brown);
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2em;
+}
+
+header p {
+  margin-top: 5px;
+  font-size: 1em;
+}
+
+/* SECTIONS */
+section {
+  padding: 40px 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 25px;
+}
+
+/* MENU GRID */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.menu-card {
+  background: var(--cream);
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.menu-card h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.menu-card p {
+  font-size: 0.9em;
+  margin: 8px 0;
+}
+
+.price {
+  font-weight: bold;
+  color: var(--brown);
+}
+
+/* FOOTER */
+footer {
+  background: var(--brown);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+}
+</style>
+
+<style>
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #F7EFE5;
+    color: #4B3529;
+  }
+  
+  header {
+    background: #6B4F3F;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+  
+  header p {
+    margin-top: 10px;
+    font-size: 1.1em;
+  }
+  
+  .container {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .profile-card {
+    background: #FFF7EE;
+    border-radius: 25px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .profile-card img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #EAD2AC;
+    margin-bottom: 20px;
+  }
+  
+  .profile-card h2 {
+    margin: 10px 0;
+    font-size: 1.8em;
+  }
+  
+  .profile-card p {
+    font-size: 1em;
+    line-height: 1.7;
+  }
+  
+  .section {
+    margin-top: 40px;
+  }
+  
+  .section h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+  
+  .list {
+    background: #FFF;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  
+  .list ul {
+    padding-left: 20px;
+  }
+  
+  footer {
+    background: #6B4F3F;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 0.9em;
+  }
+</style>
+</head>
+
+<header>
+  <h1>Whisk Café</h1>
+  <p>Cozy • Delicious • Refreshing</p>
+</header>
+
+<body>
+  
+  <div class="container">
+    
+    <div class="profile-card">
+      <!-- CHANGE IMAGE NAME IF NEEDED -->
+
+      
+      <h2>Whisk Café</h2>
+      <p>
+        Whisk Café is a cozy space where freshly brewed coffee and handcrafted pastries come together in a warm, relaxing atmosphere. It’s the perfect place to unwind, catch up with friends, or enjoy quiet moments☕✨</p>
+    </div>
+
+</head>
+
+<body>
+
+<!-- COFFEE -->
+<section>
+  <h2 class="section-title"> Coffee</h2>
+  <div class="menu-grid">
+
+    <div class="menu-card">
+      <h3>Vanilla Bean Café Latte</h3>
+      <p>Fragrant vanilla beans blended into creamy espresso.</p>
+      <span class="price">₱120</span>
+    </div>
+
+<div class="menu-card">
+  <h3>Velvet Latte</h3>
+  <p>Smooth espresso blended with steamed milk and a silky foam finish.</p>
+  <span class="price">₱120</span>
+</div>
+
+    <div class="menu-card">
+      <h3>Classic Royale Cappuccino</h3>
+      <p>Perfectly balanced espresso, milk, and airy foam.</p>
+      <span class="price">₱130</span>
+    </div>
+
+    <div class="menu-card">
+      <h3>Dark Roast Americano</h3>
+      <p>Bold espresso with a clean and rich taste.</p>
+      <span class="price">₱130</span>
+    </div>
+
+    <div class="menu-card">
+      <h3>Golden Caramel Brew</h3>
+      <p>Rich espresso drizzled with warm caramel and creamy milkr.</p>
+      <span class="price">₱140</span>
+    </div>
+    
+    <div class="menu-card">
+      <h3>Café Affogato Brew</h3>
+      <p>Espresso poured over lightly sweetened milk for a dessert-like sip.</p>
+      <span class="price">₱140</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- FRAPPE -->
+<section>
+  <h2 class="section-title">Frappes </h2>
+  <div class="menu-grid">
+
+    <div class="menu-card">
+      <h3>Mocha Frappe</h3>
+      <p>Chocolate & coffee blended with ice.</p>
+      <span class="price">₱120</span>
+    </div>
+
+    <div class="menu-card">
+      <h3>Matcha Frappe</h3>
+      <p>Sweet matcha with creamy texture.</p>
+      <span class="price">₱120</span>
+    </div>
+
+    <div class="menu-card">
+      <h3>Vanilla Frappe</h3>
+      <p>Smooth vanilla blended drink.</p>
+      <span class="price">₱120</span>
+    </div>
+
+    <div class="menu-card">
+      <h3>Chocolate Mint Frappe</h3>
+      <p>Refreshing mint with rich chocolate twist.</p>
+      <span class="price">₱130</span>
+    </div>
+
+    <div class="menu-card">
+      <h3>Mango Graham Frappe</h3>
+      <p>Ripe mango with crushed graham and cream.</p>
+      <span class="price">₱140</span>
+    </div>
+    
+        <div class="menu-card">
+      <h3>Caramel Macchiato Frappe</h3>
+      <p>Layered coffee, milk, and caramel sweetness.</p>
+      <span class="price">₱140</span>
+    </div>
+    
+        <div class="menu-card">
+      <h3>Salted Caramel Cheesecake Frappe</h3>
+      <p>Sweet caramel with a hint of salt and cream cheese.</p>
+      <span class="price">₱140</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- NON COFFEE -->
+<section>
+  <h2 class="section-title">Non-Coffee Drinks</h2>
+  <div class="menu-grid">
+
+    <div class="menu-card">
+      <h3>Royal Chocolate Elixir</h3>
+      <p>deep cocoa blended with steamed milk for a luxurious taste</p>
+      <span class="price">₱110</span>
+    </div>
+
+<div class="menu-card">
+  <h3>Matcha Velvet Cream </h3>
+  <p>sweet matcha green tea with a rich, creamy texture</p>
+  <span class="price">₱110</span>
+</div>
+
+<div class="menu-card">
+  <h3>Strawberry Milk Cloud</h3>
+  <p>fresh strawberry flavor with smooth, creamy milk</p>
+  <span class="price">₱120</span>
+</div>
+
+    <div class="menu-card">
+      <h3>Ube Cream Bliss</h3>
+      <p>nutty ube flavor with soft cream and a velvety finish</p>
+      <span class="price">₱120</span>
+    </div>
+
+    <div class="menu-card">
+      <h3>Almond Vanilla Steamer </h3>
+      <p>warm almond milk infused with vanilla sweetness</p>
+      <span class="price">₱120</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- PASTRIES -->
+<section>
+  <h2 class="section-title">Pastries & Desserts</h2>
+  <div class="menu-grid">
+
+    <div class="menu-card">
+      <h3>Caramel Cloud Waffle</h3>
+      <p>warm waffle drizzled with caramel and whipped cream</p>
+      <span class="price">₱120</span>
+    </div>
+
+    <div class="menu-card">
+      <h3>Chocolate Royale Slice</h3>
+      <p>moist chocolate cake layered with rich cocoa cream</p>
+      <span class="price">₱130</span>
+    </div>
+
+    <div class="menu-card">
+      <h3>Lemon Bliss Tart</h3>
+      <p>zesty lemon custard on a buttery crust</p>
+      <span class="price">₱130</span>
+    </div>
+    
+    <div class="menu-card">
+      <h3>Classic Café Tiramisu</h3>
+      <p>espresso-soaked layers with mascarpone cream</p>
+      <span class="price">₱140</span>
+    </div>
+
+    <div class="menu-card">
+      <h3>Honey Almond Danish</h3>
+      <p>crisp pastry filled with almond cream and honey glaze</p>
+      <span class="price">₱150</span>
+    </div>
+
+    <div class="menu-card">
+      <h3>Golden Crumb Butter Croissant</h3>
+      <p>flaky, buttery layers baked to golden perfectionflaky, buttery layers baked to golden perfection</p>
+      <span class="price">₱150</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- PASTA & FOOD -->
+<section>
+  <h2 class="section-title">Pasta & Meals</h2>
+  <div class="menu-grid">
+
+    <div class="menu-card">
+      <h3>Chicken Alfredo</h3>
+      <p>White sauce pasta with chicken.</p>
+      <span class="price">₱130</span>
+    </div>
+
+    <div class="menu-card">
+      <h3>Spicy Arrabbiata Classico </h3>
+      <p>bold tomato sauce with chili and garlic</p>
+      <span class="price">₱130</span>
+    </div>
+
+    <div class="menu-card">
+      <h3>Pesto Verde Penne</h3>
+      <p>basil pesto tossed with olive oil and parmesan</p>
+      <span class="price">₱140</span>
+    </div>
+
+    <div class="menu-card">
+      <h3>Baked Mac & Cheese Supreme</h3>
+      <p>cheesy baked pasta with golden crust topping</p>
+      <span class="price">₱150</span>
+    </div>
+    
+        <div class="menu-card">
+      <h3>Creamy Truffle Carbonara </h3>
+      <p>rich cream sauce with bacon and parmesan cheese</p>
+      <span class="price">₱150</span>
+    </div>
+    
+        <div class="menu-card">
+      <h3>Heritage Beef Bolognese</h3>
+      <p>slow-cooked beef in a savory tomato sauce</p>
+      <span class="price">₱160</span>
+    </div>
+
+    <div class="menu-card">
+      <h3>Tuscan Chicken Cream Pasta</h3>
+      <p>tender chicken in a creamy herb sauce</p>
+      <span class="price">₱160</span>
+    </div>
+
+    <div class="menu-card">
+      <h3>Seafood Rosa Linguine </h3>
+      <p>shrimp and squid in a creamy tomato blend</p>
+      <span class="price">₱170</span>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <h3>Contact</h3>
+  <p>
+    📍 Sablayan, Occidental Mindoro,  Philippines <br>
+    ✉️ whiskcafe@gmail.com <br>
+    ☎️ 0915 2683 8342</p>
+</section>
+
+<footer>
+  © 2026 Whisk Café • All rights reserved.
+</footer>
+
+</body>
+</html>
